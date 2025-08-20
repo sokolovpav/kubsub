@@ -1,12 +1,12 @@
 ## Instructions
-- Build container
+- Build container  
 docker build . -t log_output
-- Check container
+- Check container  
 docker run -it log_output
-- Import image
+- Import image  
 k3d image import log_output
-- Deploy 
+- Deploy  
 kubectl create deployment log-output-dep --image=log_output
-- Change policy 
+- Change policy   
 kubectl edit deployment log-output-dep
 
